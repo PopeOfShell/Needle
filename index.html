@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Needle — Piercing Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Tło Spline — fixed za całą treścią -->
+    <div class="spline-bg">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.96/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/ZEBk4eM1qWqVQp7j/scene.splinecode"></spline-viewer>
+    </div>
+
+    <!-- Nawigacja -->
+    <nav class="nav" id="nav">
+        <div class="nav__logo">NEEDLE</div>
+        <ul class="nav__links">
+            <li><a href="#o-mnie">O mnie</a></li>
+            <li><a href="#uslugi">Usługi</a></li>
+            <li><a href="#cennik">Cennik</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <button class="nav__burger" id="burger" aria-label="Otwórz menu">
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Menu mobilne -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#o-mnie" class="mobile-link">O mnie</a></li>
+            <li><a href="#uslugi" class="mobile-link">Usługi</a></li>
+            <li><a href="#cennik" class="mobile-link">Cennik</a></li>
+            <li><a href="#kontakt" class="mobile-link">Kontakt</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero__content">
+            <span class="hero__eyebrow">Piercing Studio</span>
+            <h1 class="hero__title">NEEDLE</h1>
+            <p class="hero__subtitle">Precyzja. Estetyka. Bezpieczeństwo.</p>
+        </div>
+        <div class="hero__scroll">
+            <div class="hero__scroll-line"></div>
+            <span>Przewiń</span>
+        </div>
+    </section>
+
+    <!-- O mnie -->
+    <section class="section" id="o-mnie">
+        <div class="section__inner">
+            <div class="section__label">01 — O mnie</div>
+            <div class="about__grid">
+                <div class="about__image-placeholder">
+                    <img src="assets/profile11.png" alt="Zdjęcie piercera" id="profile1">
+                </div>
+                <div class="about__text">
+                    <h2 class="section__heading">Pasja zamknięta<br><em>w każdym kolczyku</em></h2>
+                    <p>Witaj w moim studio. Jestem profesjonalnym piercerem z wieloletnim doświadczeniem w wykonywaniu precyzyjnych przekłuć z dbałością o bezpieczeństwo i estetykę.</p>
+                    <p>Każde przekłucie traktuję indywidualnie — doradzam najlepsze miejsce, biżuterię i dbam o Twój komfort na każdym etapie zabiegu.</p>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__number">500+</span>
+                            <span class="stat__label">Zadowolonych klientów</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">5+</span>
+                            <span class="stat__label">Lat doświadczenia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">100%</span>
+                            <span class="stat__label">Sterylny sprzęt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usługi -->
+    <section class="section section--alt" id="uslugi">
+        <div class="section__inner">
+            <div class="section__label">02 — Usługi</div>
+            <h2 class="section__heading">Co oferuję</h2>
+            <div class="services__grid">
+                <div class="service__card">
+                    <div class="service__image-placeholder"><span>Zdjęcie</span></div>
+                    <h3>Ucho — Lobe</h3>
+                    <p>Klasyczne przekłucie płatka, helix, flat, tragus i inne partie ucha.</p>
+                </div>
+                <div class="service__card">
+                    <div class="service__image-placeholder"><span>Zdjęcie</span></div>
+                    <h3>Nos</h3>
+                    <p>Nostril, septum, bridge — precyzyjne przekłucia nosa.</p>
+                </div>
+                <div class="service__card">
+                    <div class="service__image-placeholder"><span>Zdjęcie</span></div>
+                    <h3>Twarz</h3>
+                    <p>Eyebrow, labret, medusa i inne przekłucia twarzy.</p>
+                </div>
+                <div class="service__card">
+                    <div class="service__image-placeholder"><span>Zdjęcie</span></div>
+                    <h3>Ciało</h3>
+                    <p>Navel, nipple i inne przekłucia ciała z najwyższą dbałością o detal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cennik -->
+    <section class="section" id="cennik">
+        <div class="section__inner">
+            <div class="section__label">03 — Cennik</div>
+            <h2 class="section__heading">Cennik usług</h2>
+            <p class="section__desc">Ceny zawierają biżuterię tytanową implant grade. Możliwość wyboru własnej biżuterii po uprzedniej konsultacji.</p>
+            <div class="pricing__table">
+                <div class="pricing__row">
+                    <span class="pricing__name">Lobe (płatek)</span>
+                    <span class="pricing__dots"></span>
+                    <span class="pricing__price">od 80 zł</span>
+                </div>
+                <div class="pricing__row">
+                    <span class="pricing__name">Helix / Flat</span>
+                    <span class="pricing__dots"></span>
+                    <span class="pricing__price">od 100 zł</span>
+                </div>
+                <div class="pricing__row">
+                    <span class="pricing__name">Tragus / Conch</span>
+                    <span class="pricing__dots"></span>
+                    <span class="pricing__price">od 110 zł</span>
+                </div>
+                <div class="pricing__row">
+                    <span class="pricing__name">Daith / Rook</span>
+                    <span class="pricing__dots"></span>
+                    <span class="pricing__price">od 120 zł</span>
+                </div>
+                <div class="pricing__row">
+                    <span class="pricing__name">Nostril</span>
+                    <span class="pricing__dots"></span>
+                    <span class="pricing__price">od 100 zł</span>
+                </div>
+                <div class="pricing__row">
+                    <span class="pricing__name">Septum</span>
+                    <span class="pricing__dots"></span>
+                    <span class="pricing__price">od 110 zł</span>
+                </div>
+                <div class="pricing__row">
+                    <span class="pricing__name">Labret / Medusa</span>
+                    <span class="pricing__dots"></span>
+                    <span class="pricing__price">od 110 zł</span>
+                </div>
+                <div class="pricing__row">
+                    <span class="pricing__name">Navel (pępek)</span>
+                    <span class="pricing__dots"></span>
+                    <span class="pricing__price">od 120 zł</span>
+                </div>
+            </div>
+            <p class="pricing__note">* Podane ceny są orientacyjne. Dokładna wycena na konsultacji.</p>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="section section--last" id="kontakt">
+        <div class="section__inner">
+            <div class="section__label">04 — Kontakt</div>
+            <h2 class="section__heading">Umów wizytę</h2>
+            <p class="section__desc">Rezerwacje wyłącznie przez wiadomość prywatną lub e-mail. Odpowiadam w ciągu 24h.</p>
+            <div class="contact__grid">
+                <div class="contact__block">
+                    <span class="contact__icon">✦</span>
+                    <h4>Instagram</h4>
+                    <p><a href="#">@needle.piercing</a></p>
+                </div>
+                <div class="contact__block">
+                    <span class="contact__icon">✦</span>
+                    <h4>E-mail</h4>
+                    <p><a href="mailto:hello@needle.pl">hello@needle.pl</a></p>
+                </div>
+                <div class="contact__block">
+                    <span class="contact__icon">✦</span>
+                    <h4>Lokalizacja</h4>
+                    <p>Warszawa, Polska</p>
+                </div>
+            </div>
+            <a href="mailto:hello@needle.pl" class="btn-book">Zarezerwuj termin</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <span>© 2025 Needle Piercing Studio</span>
+        <span>Wszelkie prawa zastrzeżone</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

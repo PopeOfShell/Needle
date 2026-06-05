@@ -1,0 +1,24 @@
+node_modules/
+dist/
+
+# Pliki środowiskowe (mogą zawierać klucze API, sekrety)
+.env
+.env.local
+.env.*.local
+
+# Vite — pliki tymczasowe
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+*.local
+
+# Logi
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# System operacyjny
+.DS_Store
+Thumbs.db
+desktop.ini
