@@ -627,6 +627,11 @@ body {
 }
 
 @media (max-width: 540px) {
+    .spline-bg spline-viewer {
+        transform: scale(1);
+        transform-origin: center center;
+    }
+
     .services__grid {
         grid-template-columns: 1fr;
     }
