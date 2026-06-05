@@ -47,6 +47,14 @@ body {
     height: 100%;
 }
 
+.spline-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.42);
+    pointer-events: none;
+}
+
 /* === NAWIGACJA === */
 .nav {
     position: fixed;
@@ -623,8 +631,19 @@ body {
         grid-template-columns: 1fr;
     }
 
+    .hero__eyebrow {
+        font-size: 0.85rem;
+        letter-spacing: 0.22em;
+    }
+
     .hero__title {
-        letter-spacing: 0.15em;
+        font-size: clamp(2rem, 10.5vw, 3.5rem);
+        letter-spacing: 0.06em;
+    }
+
+    .hero__subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 0.18em;
     }
 }
 
