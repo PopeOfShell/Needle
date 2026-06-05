@@ -51,7 +51,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.65);
+    background: rgba(0, 0, 0, 0.35);
     pointer-events: none;
 }
 
@@ -627,9 +627,18 @@ body {
 }
 
 @media (max-width: 540px) {
-    .spline-bg spline-viewer {
-        transform: scale(1);
+    .spline-bg {
+        inset: auto;
+        width: 167vw;
+        height: 167vh;
+        left: -33.5vw;
+        top: -33.5vh;
+        transform: scale(0.6);
         transform-origin: center center;
+    }
+
+    .spline-bg spline-viewer {
+        transform: none;
     }
 
     .services__grid {
